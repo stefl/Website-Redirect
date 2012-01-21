@@ -1,6 +1,3 @@
-require 'bundler'
-Bundler.setup
-require 'sinatra'
 configure do
   @@config = YAML::load(File.open(File.join(File.dirname(__FILE__), "config.yaml")).read)
 end
